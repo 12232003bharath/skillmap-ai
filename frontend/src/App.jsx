@@ -28,7 +28,7 @@ function App() {
   setRoadmap(null);
 
   try {
-    const response = await fetch("http://localhost:5000/generate-roadmap", {
+    const response = await fetch("https://skillmap-ai-eig9.onrender.com/generate-roadmap", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
