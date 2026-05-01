@@ -43,6 +43,8 @@ Become job-ready for ${role} with practical project experience.
   res.json({ roadmap });
 });
 
-app.listen(5000, () => {
-  console.log("Server running on port 5000");
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
